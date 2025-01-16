@@ -92,8 +92,8 @@ car3 = Car("Ferrari", "Z Model", "black", 100_000, 400, 2024)
 # print(car3.get_info())
 
 
-print(car1.info_get())
-print(car2.info_get())
+# print(car1.info_get())
+# print(car2.info_get())
 
 
 

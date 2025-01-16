@@ -184,5 +184,3 @@ while True:
 #         while True:
 #             print("hato")  
 
-
-
