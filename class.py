@@ -104,11 +104,13 @@
 """ 16.01.2025 """
 
 class Student():
-    def __init__(self, name:str, surname:str, grade:int, mark:int) -> str:
+    def __init__(self, name:str, surname:str, grade:int, mark:int, friends:list, year:int) -> str:
         self.name = name
         self.surname = surname
         self.grade = grade
         self.mark = mark
+        self.friends = friends
+        self.year = year
 
 
     def get_info(self):
@@ -121,9 +123,19 @@ class Student():
         return sum(self.mark)/len(self.mark)
     
     
+    def friends_name(self):
+        """  """
+        info = f"{self.name}ning dostlari: "
+        for friend in self.friends:
+            info += f"{friend}, "
 
+        return info
+    
+    def get_age(self, now=2025):
+        """  """
+        return now - self.year
 
-student1 = Student("Mohlaroy", "Mahmudova", 10, [5,5,5,5,5])
+student1 = Student("Mohlaroy", "Mahmudova", 9, [5,5,5,5,5]), ["Oydina","Rahima","Naima"]
 print(student1.get_info())
 print(student1.orta_baho())
 
